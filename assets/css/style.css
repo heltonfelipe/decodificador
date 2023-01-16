@@ -1,0 +1,69 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #F3F5FC;
+}
+
+/*Header*/
+h1 {
+    display: inline-block;
+    margin: 3rem 3rem;
+    width: 20%;
+}
+/*Main*/
+
+
+#input-texto {
+    font-size: 22px;
+    width: 40%;
+    padding: .5rem 0.25rem;
+    margin: 1rem 20%;
+    border: 0 none;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    background: #F3F5FC;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;   
+    gap: .5rem;
+
+}
+
+#criptografar {
+    background: #0A3871;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    width: 18rem;
+    height: 3.5rem;
+    cursor: pointer;
+}
+
+#descriptografar {
+    background: #D8DFE8;
+    color: #0A3871;
+    border: 0.10rem solid #0A3871;
+    border-radius: 1rem;
+    width: 18rem;
+    height: 3.5rem;
+    cursor: pointer;
+}
+
+
+
+#mensagem{
+    margin: 2rem 0;
+    background: #F3F5FC;
+    border: 0 none;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+/*Footer*/
+.copyright{
+    text-align: center;
+    margin: 3rem auto;
+    font-weight: bold;
+    color: #0A3871;
+}
