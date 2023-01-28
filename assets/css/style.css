@@ -1,35 +1,71 @@
-body {
+* {
     font-family: 'Montserrat', sans-serif;
-    background: #F3F5FC;
+    background: #E5E5E5;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 150%;
 }
 
 /*Header*/
 h1 {
-    display: inline-block;
-    margin: 3rem 3rem;
-    width: 20%;
+    margin-left: 2.625rem;
+    padding-top: 1.625rem;
+    width: 10%;
 }
+
 /*Main*/
 
-
-#input-texto {
-    font-size: 22px;
-    width: 40%;
-    padding: .5rem 0.25rem;
-    margin: 1rem 20%;
-    border: 0 none;
-    box-shadow: 0 0 0 0;
-    outline: 0;
-    background: #F3F5FC;
-}
-
-.botoes {
+main{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;   
-    gap: .5rem;
-
+    margin:0 0 3.125rem 5rem;
+    gap: 20%;
 }
+
+#input-texto{
+    border: none;
+    color: #0A3871;
+    margin-top: 5.625rem;
+    text-transform: lowercase;
+    width: 70%;
+}
+
+#input-texto:focus{
+    outline:none;
+}
+::placeholder{
+    color:#0A3871;
+    
+}
+h6{
+    color:#495057;
+    font-size: 0.9rem;
+    margin-top: 16rem;
+}
+
+.botoes{
+    display: flex;
+    
+    gap: .5rem;
+    justify-content: bottom;
+}
+
+.imagem-texto{
+    background: white;
+    height: 90%;
+    margin-right: 10rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+.imagem-texto img + p{
+    font-weight: bold;
+}
+
+.imagem-texto img, .imagem-texto p{
+    background: white;
+    text-align: center;
+    border: none;
+}
+
 
 #criptografar {
     background: #0A3871;
@@ -51,15 +87,30 @@ h1 {
     cursor: pointer;
 }
 
-
-
 #mensagem{
-    margin: 2rem 0;
-    background: #F3F5FC;
+    
+    color:#495057;
+    height: 100%;
+    padding:2rem 0 0 2rem;
+    margin-right: auto;
+    background: white;
     border: 0 none;
     outline: 0;
     box-shadow: 0 0 0 0;
+    
 }
+#btn-copiar{
+    color:#0A3871;
+    background: white;
+    border: 0.10rem solid #0A3871;
+    border-radius: 1rem;
+    width: 18rem;
+    height: 3.5rem;
+    cursor: pointer;
+    margin-top: 3rem;
+    margin-left: 4rem;
+}
+
 /*Footer*/
 .copyright{
     text-align: center;

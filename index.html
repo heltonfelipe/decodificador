@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>DECODIFICADOR</title>
+    <title>Encriptador</title>
 
     <link href="assets/css/reset.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
@@ -12,18 +12,22 @@
 
 <body>
     <header>
-        <h1><img src="assets/img/logo.png" alt="Logo da pagina" class="logo"></h1>
+        <h1><img class="logo" src="assets/img/logo.png" alt="Logo da página"></h1>
     </header>
 
     <main>
+        <section>
+            <textarea cols="70" rows="1" id="input-texto" placeholder="Digite seu texto"></textarea>
 
-        <textarea cols="70" rows="1" id="input-texto" placeholder="Digite seu texto"></textarea>
+            <div class="informacao">
+                <h6>Apenas letras minúsculas e sem acento.  </h6>
+            </div>
+            <div class="botoes">
+                <input type="button" value="Criptografar" id="criptografar">
+                <input type="button" value="Descriptografar" id="descriptografar">
+            </div>
+        </section>
 
-        <div class="botoes">
-            <input type="button" value="Criptografar" id="criptografar">
-            <input type="button" value="Descriptografar" id="descriptografar">
-        </div>
-        
 
         <section class="imagem-texto">
             <img src="assets/img/search.svg" alt="">

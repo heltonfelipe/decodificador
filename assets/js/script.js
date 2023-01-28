@@ -1,7 +1,8 @@
 
 function criptografar() {
 
-    let texto = document.getElementById('input-texto').value;
+    let input_texto = document.getElementById('input-texto').value;
+    let texto = input_texto.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
     let imagem_texto = document.querySelector('.imagem-texto');
     let textoAuxiliar = '';
 
@@ -22,12 +23,13 @@ function criptografar() {
             textoAuxiliar += texto[i];
         }
     }
-    imagem_texto.innerHTML = `<textarea cols="70" rows="5" id="mensagem">${textoAuxiliar}</textarea>` +
-        `<input type="button" value="Copiar" onclick="copiar()">`;
+    imagem_texto.innerHTML = `<textarea cols="30" rows="10" id="mensagem">${textoAuxiliar}</textarea>` +
+        `<input id="btn-copiar" type="button" value="Copiar" onclick="copiar()">`;
 }
 
 function descriptografar() {
-    let texto = document.getElementById('input-texto').value;
+    let input_texto = document.getElementById('input-texto').value;
+    let texto = input_texto.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
     let imagem_texto = document.querySelector('.imagem-texto');
     let textoAuxiliar = '';
 
